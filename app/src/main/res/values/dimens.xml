@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="progressBar_dimen">200dp</dimen>
+    <dimen name="edit_text_height">40dp</dimen>
+    <dimen name="spinner_rl_h">50dp</dimen>
+    <dimen name="spinner_at_h">55dp</dimen>
+    <dimen name="spinner_h_big">52dp</dimen>
+    <dimen name="spinner_button_h_big">46dp</dimen>
+    <dimen name="spinner_button_w_big">40dp</dimen>
+    <dimen name="spinner_h">55dp</dimen>
+    <dimen name="spinner_button_h">41dp</dimen>
+    <dimen name="spinner_button_w">30dp</dimen>
+    <dimen name="textview_text_size">17dp</dimen>
+</resources>

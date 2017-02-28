@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bblazer.com.lifegoals.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmr"/>
+
+                <TextView
+                    android:id="@+id/bmr_total"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/bmr_fill_out"
+                    android:textSize="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Please fill out all information below to calculate BMR"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/bmr_description"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You use energy no matter what you're doing, even when sleeping. This calculator will calculate your Basal Metabolic Rate (BMR); the number of calories you'd burn if you stayed motionless for a day.  To really get how much time you should be exercising, you first have to look at your basal metabolic rate, or BMR. This is the amount of energy (calories) you burn at rest and which your body uses up just surviving. The basic rule of thumb is that you absolutely must net at or above your BMR in terms of caloric intake. This means that, when you subtract the amount of exercise calories you’ve burned from your total calories for the day, the difference is at least what your body needs to support fundamental physiological processes."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textview_text_size"
+                    android:text="Gender: "/>
+
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/male_radio"
+                        android:text="Male"
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/female_radio"
+                        android:text="Female"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textview_text_size"
+                    android:text="Current weight: "/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp">
+
+                    <EditText
+                        android:textAlignment="center"
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/edit_text_height"
+                        android:background="@drawable/textfield"
+                        android:id="@+id/current_weight_et"  />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textview_text_size"
+                    android:text="Current height: "/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp">
+
+                    <EditText
+                        android:layout_width="35dp"
+                        android:textAlignment="center"
+                        android:layout_height="@dimen/edit_text_height"
+                        android:background="@drawable/textfield"
+                        android:id="@+id/current_height_foot_et"  />
+
+                    <TextView
+                        android:text="ft."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"/>
+
+                    <EditText
+                        android:layout_width="35dp"
+                        android:textAlignment="center"
+                        android:layout_height="@dimen/edit_text_height"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/textfield"
+                        android:id="@+id/current_height_inches_et"  />
+
+                    <TextView
+                        android:text="in."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textview_text_size"
+                    android:text="Birthday: "/>
+
+                <Button
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Set Birthday"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/rounded_background"
+                    android:id="@+id/birthday" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textview_text_size"
+                    android:textColor="#333333"
+                    android:text="Activity factor: "/>
+
+
+                <RelativeLayout
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/spinner_at_h">
+
+                    <Spinner
+                        android:layout_alignParentLeft="true"
+                        android:overlapAnchor="false"
+                        android:id="@+id/activity_factor"
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/spinner_h_big"
+                        android:background="@drawable/spinner"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageButton
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/dropdown_arrow"
+                        android:layout_width="@dimen/spinner_button_w_big"
+                        android:layout_height="@dimen/spinner_button_h_big"
+                        android:layout_alignParentRight="true"
+                        android:src="@android:drawable/arrow_down_float"
+                        android:background="@drawable/spinner_button"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_factor_description"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

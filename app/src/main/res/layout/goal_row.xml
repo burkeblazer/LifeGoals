@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:weightSum="3"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="5dp"
+        android:layout_gravity="left|center_vertical">
+
+        <ImageView
+            android:id="@+id/goal_image"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bike_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ride_today"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:text="Ride 12 miles today"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_gravity="right|center_vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:id="@+id/days_remaining"
+            android:text="12 days remain"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:id="@+id/percent_complete"
+            android:text="15% complete"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:id="@+id/last_updated"
+            android:text="Rode 12 Miles last Monday"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ececec">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="@drawable/rounded_white"
+        android:padding="10dp"
+        android:id="@+id/strava_connected_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/strava_integration"
+            android:textSize="22dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/strava_connected_text"
+            android:text="Connected on 04/09/2016"/>
+
+        <ImageButton
+            android:id="@+id/strava_refresh_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:tint="@color/colorAccent"
+            android:background="@drawable/rounded_background"
+            android:src="@android:drawable/ic_popup_sync"/>
+
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/strava_delete_integration"
+            android:layout_toLeftOf="@id/strava_refresh_button"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:tint="@android:color/white"
+            android:background="@drawable/rounded_background"
+            android:src="@android:drawable/ic_delete"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/connect_strava_container">
+
+        <ImageButton
+            android:id="@+id/connect_with_strava"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/connect_with_strava"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

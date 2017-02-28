@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calorie Target"/>
+
+            <TextView
+                android:id="@+id/calorie_target"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="892"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Current:"/>
+
+                <TextView
+                    android:id="@+id/macro_ratio_type"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fasting:"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:id="@+id/empty_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/app_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/app_icon"/>
+
+                        <TextView
+                            android:layout_below="@id/app_icon"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:textSize="11dp"
+                            android:textStyle="bold"
+                            android:text="First meal of the week!"/>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/current_ratio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"></LinearLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/week_ratio"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"></com.github.mikephil.charting.charts.PieChart>
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/current_progress_ratio"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"></com.github.mikephil.charting.charts.PieChart>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:max="896"
+                android:progress="700"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:id="@+id/progress_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="700"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/auto_test"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/rounded_background"
+                    android:text="auto"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/auto_progress_container"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/auto_progress"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:max="896"
+                        android:progress="700"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/auto_progress_tv"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="100%"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:id="@+id/ingredient_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

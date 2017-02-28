@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="bblazer.com.lifegoals.MainActivity">
+    <item
+        android:id="@+id/action_integrations"
+        android:orderInCategory="100"
+        android:title="@string/integrations_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_meal_creator"
+        android:orderInCategory="100"
+        android:title="@string/meal_creator"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ingredient_manager"
+        android:orderInCategory="100"
+        android:title="@string/ingredient_manager"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_weight_loss"
+        android:orderInCategory="100"
+        android:title="@string/weight_loss"
+        app:showAsAction="never" />
+</menu>

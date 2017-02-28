@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:weightSum="3"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:paddingLeft="15dp"
+        android:layout_gravity="left|center_vertical">
+
+        <ImageView
+            android:id="@+id/goal_image"
+            android:layout_gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/strava_event" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_gravity="center_vertical"
+                android:text="Event name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_row_date"
+                android:textSize="9dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:text="04/15/16"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_end"
+                android:textSize="9dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:text="11:31 am - 2:15 pm"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_ellapsed"
+                android:textSize="9dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:text="46 mins"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:paddingRight="15dp"
+        android:layout_gravity="right|center_vertical">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:id="@+id/distance"
+                android:text="22 miles"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:id="@+id/distance_remain"
+                android:text="1070 remain"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
