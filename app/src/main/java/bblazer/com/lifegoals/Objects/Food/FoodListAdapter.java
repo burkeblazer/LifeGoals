@@ -13,7 +13,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-import bblazer.com.lifegoals.MealManager;
+import bblazer.com.lifegoals.Manager.MealManager;
 import bblazer.com.lifegoals.R;
 
 /**

@@ -11,7 +11,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#ececec"
-    tools:context="bblazer.com.lifegoals.ViewGoalActivity">
+    tools:context="bblazer.com.lifegoals.Activity.ViewGoalActivity">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -44,7 +44,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="10dp"/>
 
-            <bblazer.com.lifegoals.CircleProgressBar
+            <bblazer.com.lifegoals.Utility.CircleProgressBar
                 android:layout_below="@id/distance_left"
                 android:id="@+id/custom_progressBar"
                 android:layout_centerInParent="true"

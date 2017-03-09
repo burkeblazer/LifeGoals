@@ -12,7 +12,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import bblazer.com.lifegoals.GoalManager;
+import bblazer.com.lifegoals.Manager.GoalManager;
 import bblazer.com.lifegoals.Objects.ActivityType.ActivityType;
 import bblazer.com.lifegoals.Objects.Event.Event;
 import bblazer.com.lifegoals.Objects.UOM;

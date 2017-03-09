@@ -7,7 +7,7 @@ import org.jstrava.entities.activity.Activity;
 
 import java.util.List;
 
-import bblazer.com.lifegoals.MainActivity;
+import bblazer.com.lifegoals.Activity.MainActivity;
 
 /**
  * Created by bblazer on 4/8/16.

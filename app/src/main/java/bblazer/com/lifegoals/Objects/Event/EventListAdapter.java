@@ -12,10 +12,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-import bblazer.com.lifegoals.EventManager;
+import bblazer.com.lifegoals.Manager.EventManager;
 import bblazer.com.lifegoals.Objects.Goal.Goal;
 import bblazer.com.lifegoals.R;
-import bblazer.com.lifegoals.ViewGoalActivity;
+import bblazer.com.lifegoals.Activity.ViewGoalActivity;
 
 /**
  * Created by bblazer on 4/9/16.

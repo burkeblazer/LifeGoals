@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import bblazer.com.lifegoals.MainActivity;
+import bblazer.com.lifegoals.Activity.MainActivity;
 import bblazer.com.lifegoals.Objects.ActivityType.HumanActivity;
 
 /**

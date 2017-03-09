@@ -18,5 +18,15 @@
     <string name="amount_string"><u>Amount</u></string>
     <string name="max_string"><u>Max</u></string>
     <string name="static_string"><u>Static</u></string>
-    <string name="ingredient_manager">Ingredient Manager</string>
+    <string name="ingredient_manager">Edit Pantry</string>
+    <string name="stores_json">STORES_JSON</string>
+    <string name="meals_json">MEALS_JSON</string>
+    <string name="ingredients_json">INGREDIENTS_JSON</string>
+    <string name="title_activity_edit_list">EditListActivity</string>
+    <string name="shopping_list_json">SHOPPING_LIST</string>
+    <string name="meal_plan_json">MEAL_PLANS</string>
+    <string name="meal_logs_json">MEAL_LOGS_JSON</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    <string name="store_manager">Manage Stores</string>
 </resources>
